@@ -1,0 +1,618 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+}
+
+section {
+  min-height: 100vh;
+  padding-top: 150px;
+}
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url(fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url(fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url(fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: Poppins-BlackItalic;
+  src: url(fonts/Poppins-BlackItalic.ttf);
+}
+
+table, th, td, tr {
+  border-collapse: collapse;
+}
+
+th {
+  font-family: Poppins-Bold;
+}
+
+td {
+  font-family: Poppins-Regular;
+  font-size: 11pt;
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  border: none;
+  border-radius: 5px;
+  height: 3px;
+  background-color: #aa8b00;
+  margin: 20px 0;
+}
+
+/* MAIN SECTIONS */
+.mainSections {
+  display: none;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mainSections.active {
+  display: block;
+}
+
+
+/* genBUTTONS [START] */
+button {
+  cursor: pointer;
+}
+/* genBUTTONS [END] */
+
+/* Header [START] */
+#header {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  margin: 0px;
+  z-index: 1000;
+  background: linear-gradient(to bottom, white 85%, transparent);
+}
+
+#header div, select {
+  position: relative;
+  bottom: 10px;
+}
+
+#logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  height: 84.54px;
+  width: 238.3px;
+  margin-right: auto;
+  margin-left: 20px;
+  padding-right: 7.5px;
+  background-color: #f0f0f0;
+  border: 2px solid;
+  border-color: #aa8b00;
+  border-radius: 30px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.logos-official {
+  margin: 0;
+  margin-left: -5;
+}
+
+#navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 32.5px;
+  /* left: 1000; */
+  border: 2px solid;
+  background-color: #f0f0f0;
+  border-color: #aa8b00;
+  border-radius: 25px;
+  float: right;
+  height: 60px;
+  width: 900px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav a {
+  font-size: 29pt;
+  font-family: Poppins-Medium;
+  text-decoration: none;
+  color: hsl(0, 0%, 20%);
+  margin: 0 30px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 20px;
+
+  transition: 0.3s ease;
+}
+
+nav a:hover, 
+nav a:focus,
+nav a.active {
+  padding: 12.5px;
+  color: #f7f7f7;
+  background-color: #a12d38;
+  border-radius: 30px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+nav a:active {
+  font-size: 27pt;
+  padding: 10px;
+  color: #f7f7f7;
+  background-color: #a12d38;
+  border-radius: 30px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+#letter-selector {
+  height: 60px;
+  width: 90px;
+  margin-left: auto;
+  margin-right: 20px;
+  font-size: 20pt;
+  font-family: Poppins-BlackItalic;
+  text-align: center;
+  background-color: #f0f0f0;
+  border: 2px solid;
+  border-color: #aa8b00;
+  border-radius: 10px;
+  cursor: pointer;
+}
+/* Header [END[ */
+
+/* MAIN CONTENT */
+#main-content {
+  position: relative;
+  margin: 0px 50px;
+}
+
+/* GRADES [START] */
+#grades {
+  margin-bottom: 1in;
+}
+
+#gradesTable,
+#gradesTable th,
+#gradesTable td,
+#gradesTable tr {
+  border: 2px solid #aa8b00;
+}
+
+#gradesTable input {
+  height: 100%;
+  width: 100%;
+  font-size: large;
+  border: none;
+}
+
+#gradesTable td {
+  font-family: Poppins-Medium;
+  height: 20px;
+}
+
+#gradesTable th {
+  background-color: #a12d38;
+  color: #fff;
+  font-family: Poppins-Bold;
+}
+
+#gradesTable th:first-child {
+  width: 50px;
+}
+
+#gradesTbody1 td:first-child {
+  color: white;
+  background-color: #a12d38;
+}
+
+#gradesTbody2 td:first-child {
+  height: 35px;
+  width: 50px;
+  color: white;
+  background-color: #a12d38;
+  border: 2px solid #aa8b00;
+}
+
+#gradesTbody2 td:not(:first-child) {
+  color: white;
+  background-color: #a12d38;
+}
+
+#gradeButtons {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  margin: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 998;
+}
+
+#gradeButtons button {
+  background-color: red;
+  padding: 4px 12px;
+  margin: 0px 10px;
+  background: none;
+  font-size: 12pt;
+  font-family: Poppins-Medium;
+  text-decoration: none;
+  border: none;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  color: #f7f7f7;
+  background-color: #a12d38;
+  border-radius: 30px;
+
+  transition: 0.1s ease;
+}
+
+#gradeButtons button:hover {
+  background-color: red;
+  padding: 4px 14px;
+  margin: 0px 10px;
+  background: none;
+  font-size: 12pt;
+  font-family: Poppins-Medium;
+  text-decoration: none;
+  color: #a12d38;;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  z-index: 998;
+}
+
+#gradeButtons button:active {
+  background-color: red;
+  padding: 4px 12px;
+  margin: 0px 10px;
+  background: none;
+  font-size: 12pt;
+  font-family: Poppins-Medium;
+  text-decoration: none;
+  color: #a12d38;;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+td {
+  text-align: center;
+}
+
+input {
+  text-align: center;
+  width: 90%; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the input horizontally */
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input::placeholder {
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.3);
+}
+/* GRADES [END] */
+
+/* PLAN [START] */
+#assessmentDate {
+  font-family: Poppins-Bold;
+  font-size: 11pt;
+  background-color: rgb(255, 236, 128);
+  margin-left: 10px;
+  font-weight: bold;
+  height: 30px;
+  width: 125px;
+  border-radius: 10px;
+}
+
+#tableDate {
+  font-family: Poppins-Medium;
+  font-size: 11pt;
+}
+
+[contenteditable="true"] {
+  text-align: center;
+  position: relative;
+  padding: 5px;
+  width: 200px;
+  height: 73.34px;
+  border: none;
+}
+
+[contenteditable="true"]:empty::before {
+  content: "Nth Month of the Semester - Type of Exam (No. of Items)";
+  font-family: Poppins-Medium;
+  font-size: 9.5pt;
+  color: #999;
+  opacity: 0.75;
+  position: absolute;
+  width: 190px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: opacity 0.3s; /* Add a transition for a smooth fade */
+}
+
+[contenteditable="true"]:focus::before {
+  opacity: 0; /* Hide the placeholder when the contenteditable is focused */
+}
+
+#plan {
+  padding-bottom: .5in;
+}
+
+#planTable-pi {
+  width: 600px;
+}
+
+#planTable-pi th:nth-child(1) {
+  width: 50px;
+}
+
+#planTable-pi th {
+  background-color: #a12d38;
+  color: white;
+}
+
+#planTable-pi, 
+#planTable-pi th,
+#planTable-pi td,
+#planTable-pi tr{
+  border: 2px solid #aa8b00;
+}
+
+#plan-main-table {
+  border: 2px solid #aa8b00;
+}
+
+#plan-main-table-cells {
+  border: 2px solid #aa8b00;
+}
+
+#plan-main-table th {
+  border: 2px solid #aa8b00;
+  background-color: #a12d38;
+  color: white;
+}
+
+.triColumn-plan {
+  border-bottom: 2px solid #aa8b00;
+  width: 100%;
+}
+
+.triColumn-plan td {
+  height: 45px;
+}
+
+.triColumn-plan-indi {
+  border-bottom: 2px solid #aa8b00;
+  width: 100%;
+  height: 33px;
+}
+
+.tricol-last {
+  text-align: center;
+  width: 100%;
+  border-bottom: none;
+  height: 33px;
+}
+
+.tricolplan-last {
+  text-align: center;
+  width: 100%;
+  height: 45px;
+  border-bottom: none;
+}
+
+#plan-last-row{
+  height: 200px;
+}
+
+#plan-last-row td {
+  height: 73.34px;
+  padding-top: 2.25px;
+  padding-bottom: 2.25px;
+}
+
+/* #plan-last-row [contenteditable="true"] {
+  width: 100%;
+} */
+/* PLAN [END[ */
+
+/* SUMMARY [START] */
+#summary {
+  margin-bottom: 1in;
+}
+
+#sumTable {
+  border: 2px solid #aa8b00;
+  width: 100%;
+}
+
+#sumTable th {
+  color: white;
+  background-color: #a12d38;
+}
+
+#sumTable td {
+  height: 55px;
+}
+
+#sumTable tr,
+#sumTable th,
+#sumTable td {
+  border: 2px solid #aa8b00;
+}
+
+.sumComment-header {
+  border: 2px solid #aa8b00;
+  position: relative;
+  z-index: 2;
+  margin-top: 20px;
+  margin-left: -10px; /* Adjust the negative margin to control the overlap */
+  display: inline-block;
+  font-family: Poppins-Bold;
+  font-size: 27pt;
+  padding: 10px;
+  color: #f7f7f7;
+  background-color: #a12d38;
+  border-radius: 30px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 10px;
+}
+
+.sumComment-box {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  resize: vertical;
+  font-family: Poppins-Medium;
+  font-size: 11pt;
+  width: 100%;
+  /* width: calc(100% - 50px); */
+  box-sizing: border-box;
+  border: 2px solid;
+  border-color: #aa8b00;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  padding: 8px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  height: 175px;
+}
+/* SUMMARY [END[ */
+
+/* GRAPH */
+#graphSection-contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#graph {
+  height: 1080px;
+}
+/* GRAPH END */
+
+/* FOR PRINTING */
+@media print {
+  html {
+    -webkit-print-color-adjust: exact;
+  }
+
+  body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-size: 12pt;
+  }
+  
+  .mainSections {
+    display: none;
+  }
+
+  textarea::placeholder {
+    display: none;
+  }
+  
+  .activeSection {
+    display: block !important;
+    animation: none !important;
+  }
+
+  button {
+    visibility: hidden;
+  }
+
+  header {
+    visibility: hidden;
+    height: 0;
+  }
+
+  nav {
+    display: none;
+  }
+
+  section {
+    padding-top: 0.5in;
+  }
+
+  .plan {
+    transform: scale(0.6);
+  }
+
+  #tableDate {
+    border: none;
+  }
+  
+  @page plan {
+    size: landscape;
+    margin: none;
+  }
+
+  @page summary {
+    size: landscape;
+    margin: none;
+  }
+
+  @page graph {
+    size: landscape;
+    margin: none;
+  }
+
+  @page grades {
+    size: portrait;
+    margin: none;
+  }
+
+  /* #gradesTable th,
+  #plan-main-table th,
+  #planTable-pi th,
+  #sumTable th, 
+  #gradesTbody1 td:first-child, 
+  #gradesTbody2 td,
+  #assessmentDate,
+  .sumComment-header{
+    background-color: #a12d38 !important;
+    color: #fff;
+    -webkit-print-color-adjust: exact;
+  } */
+}

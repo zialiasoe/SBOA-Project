@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./images/CCAS Logo.png" />
+    <link rel="stylesheet" href="./login-style.css" />
+    <title>Login</title>
+    <style></style>
+  </head>
+  <body>
+    <div id="all-content">
+      <div id="main-content">
+        <div style="position: relative; bottom: 70px; ">
+          <div id="logos">
+            <img src="./images/LPU Logo.png" alt="" height="75px" />
+            <img src="./images/CCAS Logo.png" alt="" height="75px" />
+          </div>
+        </div>
+        <div id="main-text-box">
+          <h1 id="soas-text">Student Outcomes<br>Assessment<br>(BSIT)</h1>
+          <div class="circle left"></div>
+          <div class="circle"></div>
+        </div>
+        <div id="login-fields">
+          <form action="./login.php" method="post">
+            <input
+              class="blank-field"
+              type="text"
+              placeholder="username"
+              id="username" name="username"
+              required
+            /><br />
+            <input
+              class="blank-field"
+              type="password"
+              placeholder="password"
+              id="password" name="password"
+              required
+            /><br />
+            <input type="submit" value="Log In" id="loginButton" />
+          </form>
+        </div>
+      </div>
+    </div>  
+  </body>
+</html>
