@@ -10,7 +10,7 @@ addRow.addEventListener('click', function() {
     rowCount++;
 
     let defaultTemplate = `
-    <tr>
+    <tr class="grade-input">
       <td>${rowCount}</td>
       <td>
               <input type="number" placeholder="--" oninput="limitInput(this)" name="AverageA[]" onchange="calculateAverage()"/>
