@@ -518,6 +518,22 @@ input::placeholder {
   margin-bottom: 10px;
   height: 175px;
 }
+
+.vertical-resizer {
+  padding: 0;
+  margin: 0;
+  z-index: 998;
+  height: 17.5px;
+  position: relative;
+  left: 1780px;
+  bottom: 30px;
+  pointer-events: none;
+}
+
+.sumComment-box::-webkit-resizer {
+  z-index: 999;
+  display: hidden;
+}
 /* SUMMARY [END[ */
 
 /* GRAPH */
@@ -584,6 +600,10 @@ input::placeholder {
     border: none;
   }
   
+  .vertical-resizer {
+    display: none;
+  }
+
   @page plan {
     size: landscape;
     margin: none;
