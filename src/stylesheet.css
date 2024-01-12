@@ -525,7 +525,7 @@ input::placeholder {
   z-index: 998;
   height: 17.5px;
   position: relative;
-  left: 1780px;
+  float: right;
   bottom: 30px;
   pointer-events: none;
 }
