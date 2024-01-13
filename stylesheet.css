@@ -121,6 +121,11 @@ button {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
 
+#ccas-logo {
+  margin-bottom: 5px;
+  padding-right: 2.5px;
+}
+
 .logos-official {
   margin: 0;
   margin-left: -5;
