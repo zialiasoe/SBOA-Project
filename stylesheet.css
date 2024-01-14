@@ -10,6 +10,18 @@ body {
   margin: 0px;
 }
 
+strong {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700; /* POPPINS BOLD */
+  font-style: normal;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500; /* POPPINS MEDIUM */
+  font-style: normal;
+}
+
 section {
   min-height: 100vh;
   padding-top: 150px;
