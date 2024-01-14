@@ -15,36 +15,20 @@ section {
   padding-top: 150px;
 }
 
-@font-face {
-  font-family: Poppins-Regular;
-  src: url(fonts/Poppins-Regular.ttf);
-}
-
-@font-face {
-  font-family: Poppins-Medium;
-  src: url(fonts/Poppins-Medium.ttf);
-}
-
-@font-face {
-  font-family: Poppins-Bold;
-  src: url(fonts/Poppins-Bold.ttf);
-}
-
-@font-face {
-  font-family: Poppins-BlackItalic;
-  src: url(fonts/Poppins-BlackItalic.ttf);
-}
-
 table, th, td, tr {
   border-collapse: collapse;
 }
 
 th {
-  font-family: Poppins-Bold;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700; /* POPPINS BOLD */
+  font-style: normal;
 }
 
 td {
-  font-family: Poppins-Regular;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400; /* POPPINS REGULAR */
+  font-style: normal;
   font-size: 11pt;
   margin: 0;
   padding: 0;
@@ -150,7 +134,9 @@ button {
 
 nav a {
   font-size: 29pt;
-  font-family: Poppins-Medium;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500; /* POPPINS MEDIUM */
+  font-style: normal;
   text-decoration: none;
   color: hsl(0, 0%, 20%);
   margin: 0 30px;
@@ -186,7 +172,9 @@ nav a:active {
   margin-left: auto;
   margin-right: 20px;
   font-size: 20pt;
-  font-family: Poppins-BlackItalic;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900; /* POPPINS BLACK ITALIC */
+  font-style: italic;
   text-align: center;
   background-color: #f0f0f0;
   border: 2px solid;
@@ -223,14 +211,18 @@ nav a:active {
 }
 
 #gradesTable td {
-  font-family: Poppins-Medium;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500; /* POPPINS MEDIUM */
+  font-style: normal;
   height: 20px;
 }
 
 #gradesTable th {
   background-color: #a12d38;
   color: #fff;
-  font-family: Poppins-Bold;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700; /* POPPINS BOLD */
+  font-style: normal;
 }
 
 #gradesTable th:first-child {
@@ -272,7 +264,9 @@ nav a:active {
   margin: 0px 10px;
   background: none;
   font-size: 12pt;
-  font-family: Poppins-Medium;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500; /* POPPINS MEDIUM */
+  font-style: normal;
   text-decoration: none;
   border: none;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
@@ -289,7 +283,9 @@ nav a:active {
   margin: 0px 10px;
   background: none;
   font-size: 12pt;
-  font-family: Poppins-Medium;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500; /* POPPINS MEDIUM */
+  font-style: normal;
   text-decoration: none;
   color: #a12d38;;
   background-color: white;
@@ -304,7 +300,9 @@ nav a:active {
   margin: 0px 10px;
   background: none;
   font-size: 12pt;
-  font-family: Poppins-Medium;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500; /* POPPINS MEDIUM */
+  font-style: normal;
   text-decoration: none;
   color: #a12d38;;
   background-color: white;
@@ -336,7 +334,9 @@ input::placeholder {
 
 /* PLAN [START] */
 #assessmentDate {
-  font-family: Poppins-Bold;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700; /* POPPINS BOLD */
+  font-style: normal;
   font-size: 11pt;
   background-color: rgb(255, 236, 128);
   margin-left: 10px;
@@ -347,7 +347,9 @@ input::placeholder {
 }
 
 #tableDate {
-  font-family: Poppins-Medium;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500; /* POPPINS MEDIUM */
+  font-style: normal;
   font-size: 11pt;
 }
 
@@ -362,7 +364,9 @@ input::placeholder {
 
 [contenteditable="true"]:empty::before {
   content: "Nth Month of the Semester - Type of Exam (No. of Items)";
-  font-family: Poppins-Medium;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500; /* POPPINS MEDIUM */
+  font-style: normal;
   font-size: 9.5pt;
   color: #999;
   opacity: 0.75;
@@ -493,7 +497,9 @@ input::placeholder {
   margin-top: 20px;
   margin-left: -10px; /* Adjust the negative margin to control the overlap */
   display: inline-block;
-  font-family: Poppins-Bold;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700; /* POPPINS BOLD */
+  font-style: normal;
   font-size: 27pt;
   padding: 10px;
   color: #f7f7f7;
@@ -509,7 +515,9 @@ input::placeholder {
   justify-content: center;
   z-index: 1;
   resize: vertical;
-  font-family: Poppins-Medium;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500; /* POPPINS MEDIUM */
+  font-style: normal;
   font-size: 11pt;
   width: 100%;
   /* width: calc(100% - 50px); */
