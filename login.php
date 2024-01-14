@@ -33,12 +33,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit();
     } else {
         // Authentication failed
-        $response = array('status' => 'error', 'message' => 'Incorrect username or password.');
+        $response = "<script>
+                        alert('Incorrect username or password.');
+                        window.location.href='login.html';
+                      </script>";
     }
 
-    // JSON response
-    header('Content-Type: application/json');
-    echo json_encode($response);
+    echo ($response);
     $conn->close();
     exit();
 }
