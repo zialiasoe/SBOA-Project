@@ -11,9 +11,12 @@
     <!-- CSS Link -->
     <script src="./script.js"></script>
     <!-- JavaScript Link-->
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!--TableScript-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Font Repository (Google Fonts; Poppins Font Family) -->
   </head>
 
   <body>
@@ -57,6 +60,11 @@
       </select>
     </header>
     <!-- HEADER / NAVIGATION BAR [END] -->
+    <!-- PRINT ONLY HEADER -->
+    <div id="print-header">
+      <img src="images/header-placeholder.png" alt="Print Header">
+    </div>
+    <!-- PRINT ONLY HEADER END -->
     <main id="main-content">
       <section id="grades" class="mainSections active activeSection">
         <!-- GRADES -->
@@ -172,15 +180,15 @@
 
       <section id="plan" class="mainSections">
         <!-- PLAN -->
-        <label for="Assessment Date"><strong style="font-family: Poppins-Bold;">Assessment Date:</strong></label>
+        <label for="Assessment Date"><strong>Assessment Date:</strong></label>
         <input type="date" id="assessmentDate" />
-        <p style="font-family: Poppins-Medium;">
-          <strong style="font-family: Poppins-Bold;">Outcomes (a):</strong> An ability to apply knowledge of
+        <p>
+          <strong>Student Outcome (a):</strong> An ability to apply knowledge of
           computing and mathematics appropriate to the discipline
         </p>
         <hr/>
         <div> <!-- PART I -->
-          <p class="parPlan"><strong style="font-family: Poppins-Bold;">Part I: Student Outcome Performance Indicators</strong></p>
+          <p class="parPlan"><strong>Part I: Student Outcome Performance Indicators</strong></p>
           <table id="planTable-pi">
             <tr>
               <th>PI#</th>
@@ -202,7 +210,7 @@
         </div>
         <div> <!-- PART II -->
           <p class="parPlan">
-            <strong style="font-family: Poppins-Bold;">Part II: Assessment, Evaluation and Improvement Plan for Formative
+            <strong>Part II: Assessment, Evaluation and Improvement Plan for Formative
               Courses</strong
             >
           </p>
@@ -511,8 +519,8 @@
       </section>
 
       <section id="summary" class="mainSections"> <!-- SUMMARY -->
-        <p style="font-family: Poppins-Medium;">
-          <strong style="font-family: Poppins-Bold;">Student Outcome (a):</strong> An ability to apply knowledge of
+        <p>
+          <strong>Student Outcome (a):</strong> An ability to apply knowledge of
           computing and mathematics appropriate to the discipline
         </p>
         <table id="sumTable">
@@ -583,8 +591,8 @@
       </section>
 
       <section id="graph" class="mainSections"> <!-- GRAPH -->
-        <p style="font-family: Poppins-Medium;">
-          <strong style="font-family: Poppins-Bold;">Student Outcome (a):</strong> An ability to apply knowledge of
+        <p>
+          <strong>Student Outcome (a):</strong> An ability to apply knowledge of
           computing and mathematics appropriate to the discipline.
         </p>
         <div id="graphSection-contents">
