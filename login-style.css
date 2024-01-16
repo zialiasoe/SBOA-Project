@@ -30,6 +30,11 @@ body {
   }
 }
 
+#ccas-logo {
+  margin-bottom: 5px;
+  padding-right: 2.5px;
+}
+
 #main-content {
   display: flex;
   flex-direction: column;
