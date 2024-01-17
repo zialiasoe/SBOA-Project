@@ -191,7 +191,7 @@ nav a:active {
 #dialog-box {
   display: none;
   height: auto;
-  position: absolute;
+  position: fixed;
   top: 100px;
   left: 79.33%;
   z-index: 1001;

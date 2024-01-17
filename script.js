@@ -153,7 +153,7 @@ document.getElementById('print-button').addEventListener('click', function() {
 });
 
 // FOR PRINT HOVER INSTRUCTIONS
-var button = document.getElementById('print-button');
+  var button = document.getElementById('print-button');
     var dialogBox = document.getElementById('dialog-box');
 
     button.addEventListener('mouseover', function() {
