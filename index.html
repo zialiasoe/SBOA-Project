@@ -256,7 +256,14 @@
                 <td style="border: 2px solid #aa8b00; background-color: rgb(255, 236, 128, 0.2);">10%</td>
                 <td style="border: 2px solid #aa8b00; background-color: rgb(255, 236, 128, 0.2);" id="FinalAverageOutput3"></td>
                 <td style="border: 2px solid #aa8b00;"><input type="date" id="tableDate"></td>
-                <td style="border: 2px solid #aa8b00;"><input type="date" id="tableDate"></td>
+                <td style="border: 2px solid #aa8b00;">
+                  <select name="" class="date-implementation" style="text-align: center;">
+                    <option disabled selected>Select Semester</option>
+                    <option>First Semester</option>
+                    <option>Second Semester</option>
+                    <option>Summer Class</option>
+                  </select>
+                </td>
               </td>
             </tr>
             <tr> <!-- Copy/Paste [for Columns] -->
@@ -287,7 +294,16 @@
                 <td style="border: 2px solid #aa8b00; background-color: rgb(255, 236, 128, 0.2);">10%</td>
                 <td style="border: 2px solid #aa8b00; background-color: rgb(255, 236, 128, 0.2);" id="FinalAverageOutput5"></td>
                 <td style="border: 2px solid #aa8b00;"><input type="date" id="tableDate"></td>
-                <td style="border: 2px solid #aa8b00;"><input type="date" id="tableDate"></td>
+                <!-- REMOVE COMMENT BELOW IF: REIMPLEMENT CALENDAR -->
+                <!-- <td style="border: 2px solid #aa8b00;"><input type="date" id="tableDate"></td> -->
+                <td style="border: 2px solid #aa8b00;">
+                  <select name="" class="date-implementation" style="text-align: center;">
+                    <option disabled selected>Select Semester</option>
+                    <option>First Semester</option>
+                    <option>Second Semester</option>
+                    <option>Summer Class</option>
+                  </select>
+                </td>
               </td>
             </tr>
             <tr> <!-- Copy/Paste [for Columns] -->
@@ -318,7 +334,14 @@
                 <td style="border: 2px solid #aa8b00; background-color: rgb(255, 236, 128, 0.2);">10%</td>
                 <td style="border: 2px solid #aa8b00; background-color: rgb(255, 236, 128, 0.2);" id="FinalAverageOutput7"></td>
                 <td style="border: 2px solid #aa8b00;"><input type="date" id="tableDate"></td>
-                <td style="border: 2px solid #aa8b00;"><input type="date" id="tableDate"></td>
+                <td style="border: 2px solid #aa8b00;">
+                  <select name="" class="date-implementation" style="text-align: center;">
+                    <option disabled selected>Select Semester</option>
+                    <option>First Semester</option>
+                    <option>Second Semester</option>
+                    <option>Summer Class</option>
+                  </select>
+                </td>
               </td>
             </tr>
             <tr id="plan-last-row"> <!-- Copy/Paste [for Columns] -->
@@ -439,7 +462,7 @@
                 <td style="border: 2px solid #aa8b00; background-color: rgb(255, 236, 128, 0.2);" class="triCell"> <!-- 3 COLUMNED CELLS -->
                   <table class="triColumn-plan">
                     <tr>
-                      <td>10%</td>
+                      <td>5%</td>
                     </tr>
                   </table>
             
@@ -496,19 +519,40 @@
                 <td style="border: 2px solid #aa8b00;" class="triCell"> <!-- 3 COLUMNED CELLS -->
                   <table class="triColumn-plan">
                     <tr>
-                      <td><input type="date" id="tableDate"></td>
+                      <td>
+                        <select name="" class="date-implementation" style="text-align: center;">
+                          <option disabled selected>Select Semester</option>
+                          <option>First Semester</option>
+                          <option>Second Semester</option>
+                          <option>Summer Class</option>
+                        </select>
+                      </td>
                     </tr>
                   </table>
             
                   <table class="triColumn-plan">
                     <tr>
-                      <td><input type="date" id="tableDate"></td>
+                      <td>
+                        <select name="" class="date-implementation" style="text-align: center;">
+                          <option disabled selected>Select Semester</option>
+                          <option>First Semester</option>
+                          <option>Second Semester</option>
+                          <option>Summer Class</option>
+                        </select>
+                      </td>
                     </tr>
                   </table>
             
                   <table class="tricolplan-last">
                     <tr>
-                      <td><input type="date" id="tableDate"></td>
+                      <td>
+                        <select name="" class="date-implementation" style="text-align: center;">
+                          <option disabled selected>Select Semester</option>
+                          <option>First Semester</option>
+                          <option>Second Semester</option>
+                          <option>Summer Class</option>
+                        </select>
+                      </td>
                     </tr>
                   </table>
                 </td>
@@ -554,7 +598,7 @@
           <tr style="background-color: rgb(255, 236, 128, 0.2);">
             <td>3. Apply the knowledge of mathematics in developing computing solutions.</td>
             <td>COMP 2, COMP 3, COMP 4, IT 7</td>
-            <td style="padding: 0 5px;">MIDTERM EXAMINATION</td>
+            <td style="padding: 0 5px;">FINAL<br>EXAMINATION</td>
             <td>IT 17</td>
             <td>2016, 2019, 2022</td>
             <td>Department Chairman & Senior Faculty</td>
@@ -581,7 +625,16 @@
           
             <div>
               <div class="sumComment-header">
-                <label for="comment">Third Cycle Results:</label>
+                <label for="comment" 
+                  contenteditable="true"
+                  id="editable-label"
+                  style="left: 10px;">
+                  First Cycle Results:
+                </label>
+                <img
+                  src="./images/pencil-icon.png"
+                  alt="This field is editable."
+                  id="pencil-icon">
               </div>
               <textarea class="sumComment-box" placeholder="input cycle results" cols="180" rows="7" style="font-weight: 700;"></textarea>
               <img class="vertical-resizer" src="./images/vertical-resize.png" alt="vertically resize">

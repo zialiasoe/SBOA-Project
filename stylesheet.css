@@ -27,6 +27,7 @@ section {
   padding-top: 150px;
 }
 
+/* TABLE STYLE SHEET (GENERAL) */
 table, th, td, tr {
   border-collapse: collapse;
 }
@@ -47,6 +48,8 @@ td {
   padding: 0;
 }
 
+
+/* LINE @ Plan Section */
 hr {
   border: none;
   border-radius: 5px;
@@ -362,6 +365,20 @@ input::placeholder {
   font-size: 11pt;
 }
 
+.date-implementation {
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500; /* Poppins Medium */
+  font-style: normal;
+  font-size: 11pt;
+  height: auto;
+  line-height: 1.5;
+}
+
+.date-implementation option:first-child {
+  opacity: 0.25;
+}
+
 [contenteditable="true"] {
   text-align: center;
   position: relative;
@@ -522,6 +539,34 @@ input::placeholder {
   margin-bottom: 10px;
 }
 
+/* FOR CONTENTEDITABLE */
+.sumComment-header [contenteditable="true"]:empty::before {
+  content: " ";
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18pt;
+  text-align: center;
+  position: absolute;
+  width: 790px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sumComment-header [contenteditable="true"]:focus::before {
+  opacity: 0;
+}
+
+/* PENCIL ICON */
+#pencil-icon {
+  position: relative;
+    left: 40px;
+    margin: 0; 
+    padding: 0;
+    height: 20px;
+}
+
 .sumComment-box {
   position: relative;
   align-items: center;
@@ -657,6 +702,17 @@ input::placeholder {
     transform: scale(0.6);
   } */
 
+  /* Plan Date of Implementation Print Style */
+  .date-implementation {
+    appearance: none; /* Remove default appearance */
+    -webkit-appearance: none; /* For older versions of WebKit browsers */
+    -moz-appearance: none; /* For older versions of Firefox */
+    border: none; /* Remove border */
+    padding: 5px; /* Add padding if needed for visual separation */
+    background: transparent; /* Set a transparent background */
+    text-align: center;
+  }
+
   #tableDate {
     border: none;
   }
@@ -699,6 +755,10 @@ input::placeholder {
     box-shadow: none;
     background-color: transparent;
     color: rgb(20, 20, 20);
+  }
+
+  #pencil-icon {
+    display: none;
   }
 
   /* REMOVES THE CALENDAR ICON FOR DATE INPUTS */
