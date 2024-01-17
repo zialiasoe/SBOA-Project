@@ -16,7 +16,7 @@ for Plan Section:
       - Add Print Button
        DONE
       - Add Print Instructions
-       DONE
+       REVISE - DOES NOT MOVE WITH SCROLL
       - Add Header Layout (Check SOAS GC)
        UP NEXT
 
