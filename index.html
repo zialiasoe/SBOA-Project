@@ -71,11 +71,16 @@
         <table id="gradesTable">
           <!-- GRADES TABLE -->
           <tbody>
-            <th colspan="13">STUDENT OUTCOMES (a)</th>
+            <th colspan="5">STUDENT OUTCOMES (a)</th>
             <tr>
               <!-- SUBJECTS / TYPE OF EXAM -->
               <th>#</th>
-              <th>IT 1<br>PRELIM<br>(LEC)</th>
+              <th>COMP 2<br>(LEC)</th>
+              <th>COMP 3<br>(LEC)</th>
+              <th>COMP 4<br>(LAB)</th>
+              <th>IT 7<br>(LAB)</th>
+              <!-- remove comments if necessary for a change -->
+              <!-- <th>IT 1<br>PRELIM<br>(LEC)</th>
               <th>IT 2<br>PRELIM<br>(LEC)</th>
               <th>IT 2<br>MIDTERM<br>(LAB)</th>
               <th>IT 3<br>PRELIM<br>(LEC)</th>
@@ -86,7 +91,7 @@
               <th>IT 10<br>MIDTERM<br>(LEC)</th>
               <th>IT 10<br>FINALS<br>(LEC)</th>
               <th>IT 20<br>MIDTERM<br>(LEC)</th>
-              <th>IT 20<br>FINALS<br>(LEC)</th>
+              <th>IT 20<br>FINALS<br>(LEC)</th> -->
             </tr>
           </tbody>
 
@@ -106,7 +111,8 @@
             <td>
               <input type="number" placeholder="--" oninput="limitInput(this)" name="AverageD[]" onchange="calculateAverage()"/>
             </td>
-            <td>
+            <!-- remove comments if necessary for a change -->
+            <!-- <td>
               <input type="number" placeholder="--" oninput="limitInput(this)" name="AverageE[]" onchange="calculateAverage()"/>
             </td>
             <td>
@@ -129,7 +135,7 @@
             </td>
             <td>
               <input type="number" placeholder="--" oninput="limitInput(this)" name="AverageL[]" onchange="calculateAverage()"/>
-            </td>
+            </td> -->
           </tr>
           <tbody id="gradesTbody2">
             <tr>
@@ -138,14 +144,15 @@
               <td id="AverageBOutput"></td>
               <td id="AverageCOutput"></td>
               <td id="AverageDOutput"></td>
-              <td id="AverageEOutput"></td>
+              <!-- remove comments if necessary for a change -->
+              <!-- <td id="AverageEOutput"></td>
               <td id="AverageFOutput"></td>
               <td id="AverageGOutput"></td>
               <td id="AverageHOutput"></td>
               <td id="AverageIOutput"></td>
               <td id="AverageJOutput"></td>
               <td id="AverageKOutput"></td>
-              <td id="AverageLOutput"></td>
+              <td id="AverageLOutput"></td> -->
             </tr>
             <tr>
               <td>PS</td>
@@ -153,14 +160,15 @@
               <td></td>
               <td></td>
               <td></td>
+              <!-- remove comments if necessary for a change -->
+              <!-- <td></td>
               <td></td>
               <td></td>
               <td></td>
               <td></td>
               <td></td>
               <td></td>
-              <td></td>
-              <td></td>
+              <td></td> -->
             </tr>
           </tbody>
         </tbody>
@@ -629,7 +637,7 @@
                   contenteditable="true"
                   id="editable-label"
                   style="left: 10px;">
-                  First Cycle Results:
+                  Third Cycle Results:
                 </label>
                 <img
                   src="./images/pencil-icon.png"
