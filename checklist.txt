@@ -16,6 +16,9 @@ for Plan Section:
       - Add Print Button
        DONE
       - Add Print Instructions
+       DONE
+      - Add Header Layout (Check SOAS GC)
+       UP NEXT
 
 5. Grades
       - Change to 4 Courses that are present in the Plan Section.

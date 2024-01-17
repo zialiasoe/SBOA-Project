@@ -151,3 +151,37 @@ document.addEventListener('DOMContentLoaded', function () {
 document.getElementById('print-button').addEventListener('click', function() {
   window.print();
 });
+
+// FOR PRINT HOVER INSTRUCTIONS
+var button = document.getElementById('print-button');
+    var dialogBox = document.getElementById('dialog-box');
+
+    button.addEventListener('mouseover', function() {
+      showPopup();
+    });
+
+    button.addEventListener('mouseout', function() {
+      hidePopup();
+    });
+
+    function showPopup() {
+      var rect = button.getBoundingClientRect();
+
+      // Position the dialog box below the button
+      dialogBox.style.left = rect.left + '-20px';
+      dialogBox.style.top = rect.bottom + '-10px';
+
+      dialogBox.style.display = 'block';
+      setTimeout(function() {
+        dialogBox.style.opacity = 1;
+        dialogBox.style.transform = 'translateY(0)';
+      }, 10);
+    }
+
+    function hidePopup() {
+      dialogBox.style.opacity = 0;
+      dialogBox.style.transform = 'translateY(-10px)';
+      setTimeout(function() {
+        dialogBox.style.display = 'none';
+      }, 300);
+    }
