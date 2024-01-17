@@ -1,19 +1,22 @@
 for Plan Section:
 1. Date of Implementation
       - Make it a dropdown menu of 1st Semester, 2nd Semester, and Summer Class.
-      - DONE
+       DONE
 
 2. Summary
       - Make "Third Cycle Results" changeable to First, Second, and Third. (Different Cycles).
-      - DONE
+       DONE
       - Add School Year dropdown.
+       DONE
 
 3. Graph
       - LLANDER
 
 4. OVERALL
-      - Add Print Button / Instructions
+      - Add Print Button
+       DONE
+      - Add Print Instructions
 
 5. Grades
       - Change to 4 Courses that are present in the Plan Section.
-      - DONE
+       DONE

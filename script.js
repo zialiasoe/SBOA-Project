@@ -147,3 +147,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+// PRINT BUTTON ; PRINT FUNCTION
+document.getElementById('print-button').addEventListener('click', function() {
+  window.print();
+});

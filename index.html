@@ -9,8 +9,6 @@
     <title>Student Outcomes Assessment (BSIT)</title>
     <link rel="stylesheet" href="./stylesheet.css" />
     <!-- CSS Link -->
-    <script src="./script.js"></script>
-    <!-- JavaScript Link-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!--TableScript-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -49,6 +47,8 @@
         <a href="#summary" class="tab-item" data-section="summary">Summary</a>
         <a href="#graph" class="tab-item" data-section="graph">Graph</a>
       </nav>
+
+      <button id="print-button">Print</button>
 
       <select name="" id="letter-selector" onchange="redirectToWebsite()"> <!--DROPDOWN MENU-->
         <option value="a">(a.)</option>
@@ -264,12 +264,18 @@
                 <td style="border: 2px solid #aa8b00; background-color: rgb(255, 236, 128, 0.2);">10%</td>
                 <td style="border: 2px solid #aa8b00; background-color: rgb(255, 236, 128, 0.2);" id="FinalAverageOutput3"></td>
                 <td style="border: 2px solid #aa8b00;"><input type="date" id="tableDate"></td>
-                <td style="border: 2px solid #aa8b00;">
-                  <select name="" class="date-implementation" style="text-align: center;">
+                <td id="plan-dropdowns" style="border: 2px solid #aa8b00">
+                  <select class="plan-semester" style="text-align: center;">
                     <option disabled selected>Select Semester</option>
                     <option>First Semester</option>
                     <option>Second Semester</option>
                     <option>Summer Class</option>
+                  </select>
+                  <select class="plan-schoolyear">
+                    <option disabled selected>Select School Year</option>
+                    <option>S.Y. 2021-2022</option>
+                    <option>S.Y. 2022-2023</option>
+                    <option>S.Y. 2023-2024</option>
                   </select>
                 </td>
               </td>
@@ -304,12 +310,18 @@
                 <td style="border: 2px solid #aa8b00;"><input type="date" id="tableDate"></td>
                 <!-- REMOVE COMMENT BELOW IF: REIMPLEMENT CALENDAR -->
                 <!-- <td style="border: 2px solid #aa8b00;"><input type="date" id="tableDate"></td> -->
-                <td style="border: 2px solid #aa8b00;">
-                  <select name="" class="date-implementation" style="text-align: center;">
+                <td id="plan-dropdowns" style="border: 2px solid #aa8b00">
+                  <select class="plan-semester" style="text-align: center;">
                     <option disabled selected>Select Semester</option>
                     <option>First Semester</option>
                     <option>Second Semester</option>
                     <option>Summer Class</option>
+                  </select>
+                  <select class="plan-schoolyear">
+                    <option disabled selected>Select School Year</option>
+                    <option>S.Y. 2021-2022</option>
+                    <option>S.Y. 2022-2023</option>
+                    <option>S.Y. 2023-2024</option>
                   </select>
                 </td>
               </td>
@@ -342,12 +354,18 @@
                 <td style="border: 2px solid #aa8b00; background-color: rgb(255, 236, 128, 0.2);">10%</td>
                 <td style="border: 2px solid #aa8b00; background-color: rgb(255, 236, 128, 0.2);" id="FinalAverageOutput7"></td>
                 <td style="border: 2px solid #aa8b00;"><input type="date" id="tableDate"></td>
-                <td style="border: 2px solid #aa8b00;">
-                  <select name="" class="date-implementation" style="text-align: center;">
+                <td id="plan-dropdowns" style="border: 2px solid #aa8b00">
+                  <select class="plan-semester" style="text-align: center;">
                     <option disabled selected>Select Semester</option>
                     <option>First Semester</option>
                     <option>Second Semester</option>
                     <option>Summer Class</option>
+                  </select>
+                  <select class="plan-schoolyear">
+                    <option disabled selected>Select School Year</option>
+                    <option>S.Y. 2021-2022</option>
+                    <option>S.Y. 2022-2023</option>
+                    <option>S.Y. 2023-2024</option>
                   </select>
                 </td>
               </td>
@@ -527,12 +545,18 @@
                 <td style="border: 2px solid #aa8b00;" class="triCell"> <!-- 3 COLUMNED CELLS -->
                   <table class="triColumn-plan">
                     <tr>
-                      <td>
-                        <select name="" class="date-implementation" style="text-align: center;">
+                      <td id="plan-dropdowns">
+                        <select class="plan-semester" style="text-align: center;">
                           <option disabled selected>Select Semester</option>
                           <option>First Semester</option>
                           <option>Second Semester</option>
                           <option>Summer Class</option>
+                        </select>
+                        <select class="plan-schoolyear">
+                          <option disabled selected>Select School Year</option>
+                          <option>S.Y. 2021-2022</option>
+                          <option>S.Y. 2022-2023</option>
+                          <option>S.Y. 2023-2024</option>
                         </select>
                       </td>
                     </tr>
@@ -540,12 +564,18 @@
             
                   <table class="triColumn-plan">
                     <tr>
-                      <td>
-                        <select name="" class="date-implementation" style="text-align: center;">
+                      <td id="plan-dropdowns">
+                        <select class="plan-semester" style="text-align: center;">
                           <option disabled selected>Select Semester</option>
                           <option>First Semester</option>
                           <option>Second Semester</option>
                           <option>Summer Class</option>
+                        </select>
+                        <select class="plan-schoolyear">
+                          <option disabled selected>Select School Year</option>
+                          <option>S.Y. 2021-2022</option>
+                          <option>S.Y. 2022-2023</option>
+                          <option>S.Y. 2023-2024</option>
                         </select>
                       </td>
                     </tr>
@@ -553,12 +583,18 @@
             
                   <table class="tricolplan-last">
                     <tr>
-                      <td>
-                        <select name="" class="date-implementation" style="text-align: center;">
+                      <td id="plan-dropdowns">
+                        <select class="plan-semester" style="text-align: center;">
                           <option disabled selected>Select Semester</option>
                           <option>First Semester</option>
                           <option>Second Semester</option>
                           <option>Summer Class</option>
+                        </select>
+                        <select class="plan-schoolyear">
+                          <option disabled selected>Select School Year</option>
+                          <option>S.Y. 2021-2022</option>
+                          <option>S.Y. 2022-2023</option>
+                          <option>S.Y. 2023-2024</option>
                         </select>
                       </td>
                     </tr>
@@ -635,8 +671,7 @@
               <div class="sumComment-header">
                 <label for="comment" 
                   contenteditable="true"
-                  id="editable-label"
-                  style="left: 10px;">
+                  id="editable-label">
                   Third Cycle Results:
                 </label>
                 <img
@@ -670,4 +705,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="./tableScript.js"></script>
   <script src="./formula.js"></script>
+  <!-- JavaScript Link-->
+  <script src="./script.js"></script>
 </html>
