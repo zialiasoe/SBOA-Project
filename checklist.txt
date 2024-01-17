@@ -13,3 +13,6 @@ for Plan Section:
 
 4. OVERALL
       - Add Print Button / Instructions
+
+5. Grades
+      - Change to 4 Courses that are present in the Plan Section.
