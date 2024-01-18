@@ -24,30 +24,6 @@ addRow.addEventListener('click', function() {
             <td>
               <input type="number" placeholder="--" oninput="limitInput(this)" name="AverageD[]" onchange="calculateAverage()"/>
             </td>
-            <td>
-              <input type="number" placeholder="--" oninput="limitInput(this)" name="AverageE[]" onchange="calculateAverage()"/>
-            </td>
-            <td>
-              <input type="number" placeholder="--" oninput="limitInput(this)" name="AverageF[]" onchange="calculateAverage()"/>
-            </td>
-            <td>
-              <input type="number" placeholder="--" oninput="limitInput(this)" name="AverageG[]" onchange="calculateAverage()"/>
-            </td>
-            <td>
-              <input type="number" placeholder="--" oninput="limitInput(this)" name="AverageH[]" onchange="calculateAverage()"/>
-            </td>
-            <td>
-              <input type="number" placeholder="--" oninput="limitInput(this)" name="AverageI[]" onchange="calculateAverage()"/>
-            </td>
-            <td>
-              <input type="number" placeholder="--" oninput="limitInput(this)" name="AverageJ[]" onchange="calculateAverage()"/>
-            </td>
-            <td>
-              <input type="number" placeholder="--" oninput="limitInput(this)" name="AverageK[]" onchange="calculateAverage()"/>
-            </td>
-            <td>
-              <input type="number" placeholder="--" oninput="limitInput(this)" name="AverageL[]" onchange="calculateAverage()"/>
-            </td>
     </tr>`;
 
     // Create new row

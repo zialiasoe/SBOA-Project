@@ -147,3 +147,81 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+// PRINT BUTTON ; PRINT FUNCTION
+document.getElementById('print-button').addEventListener('click', function() {
+  window.print();
+});
+
+// FOR PRINT HOVER INSTRUCTIONS
+    var button = document.getElementById('print-button');
+    var dialogBox = document.getElementById('dialog-box');
+    var additionalContent = document.getElementById('additional-content');
+
+    button.addEventListener('mouseover', function() {
+      showPopup();
+    });
+
+    button.addEventListener('mouseout', function() {
+      hidePopup();
+    });
+
+    window.addEventListener('scroll', function() {
+      updateAdditionalContent();
+    });
+
+    function showPopup() {
+      var rect = button.getBoundingClientRect();
+
+      // Position the dialog box below the button
+      dialogBox.style.left = rect.left + '-20px';
+      dialogBox.style.top = rect.bottom + '-10px';
+
+      dialogBox.style.display = 'block';
+      setTimeout(function() {
+        dialogBox.style.opacity = 1;
+        dialogBox.style.transform = 'translateY(0)';
+        updateAdditionalContent();
+      }, 10);
+    }
+
+    function hidePopup() {
+      dialogBox.style.opacity = 0;
+      dialogBox.style.transform = 'translateY(-10px)';
+      setTimeout(function() {
+        dialogBox.style.display = 'none';
+      }, 300);
+    }
+
+
+// Change Pop-up Contents based on Section in current view
+function updateAdditionalContent() {
+  // Check which section is currently in view
+  var sections = document.querySelectorAll('section');
+  var activeSection;
+
+  sections.forEach(function(section) {
+    var rect = section.getBoundingClientRect();
+    if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+      activeSection = section.id;
+    }
+  });
+
+  // Update additional content based on the active section
+  switch (activeSection) {
+    case 'grades':
+      additionalContent.textContent = 'Layout: Portrait';
+      break;
+    case 'plan':
+      additionalContent.textContent = 'Layout: Landscape';
+      break;
+    case 'summary':
+      additionalContent.textContent = 'Layout: Landscape';
+      break;
+    case 'graph':
+      additionalContent.textContent = 'Layout: Landscape';
+      break;
+    default:
+      additionalContent.textContent = '';
+      break;
+  }
+}
