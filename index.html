@@ -702,7 +702,32 @@
           <strong>Student Outcome (a):</strong> An ability to apply knowledge of
           computing and mathematics appropriate to the discipline.
         </p>
+        <table id="gradesTable">
+          <tbody id="gradesTbody1">
+            <tr>
+              <td>a1</td>
+              <td><input type="number" id="a1v1"></td>
+              <td><input type="number" id="a2v1"></td>
+              <td><input type="number" id="a3v1"></td>
+          </tr>
+          <tr>
+              <td>a2</td>
+              <td><input type="number" id="a1v2"></td>
+              <td><input type="number" id="a2v2"></td>
+              <td><input type="number" id="a3v2"></td>
+          </tr>
+          <tr>
+              <td>a3</td>
+              <td><input type="number" id="a1v3"></td>
+              <td><input type="number" id="a2v3"></td>
+              <td><input type="number" id="a3v3"></td>
+          </tr>
+          </tbody>
+        </table>
+        <br>
         <div id="graphSection-contents"><!-- Plotly chart--></div>
+        <br>
+        <button onclick="updateGraph()">Update Graph</button>
       </section>
     </main>
   </body>
