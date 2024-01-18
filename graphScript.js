@@ -23,8 +23,8 @@ var layout = {
     width: 900,
     legend: {
         x: 0.2,
-        y: 1.2, // Adjust this value to position the legend above the graph
-        orientation: 'h', // Set orientation to 'h' for horizontal
+        y: 1.2,
+        orientation: 'h',
     }
 };
 
