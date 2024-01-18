@@ -702,32 +702,40 @@
           <strong>Student Outcome (a):</strong> An ability to apply knowledge of
           computing and mathematics appropriate to the discipline.
         </p>
-        <table id="gradesTable">
-          <tbody id="gradesTbody1">
+
+        <!-- Automatic Graph -->
+        <div>
+          <button onclick="updateGraph()">Update Graph</button>
+          <table id="gradesTable">
+            <tbody id="gradesTbody1">
+              <tr>
+                <td>a1</td>
+                <td><input type="number" id="a1v1"></td>
+                <td><input type="number" id="a2v1"></td>
+                <td><input type="number" id="a3v1"></td>
+            </tr>
             <tr>
-              <td>a1</td>
-              <td><input type="number" id="a1v1"></td>
-              <td><input type="number" id="a2v1"></td>
-              <td><input type="number" id="a3v1"></td>
-          </tr>
-          <tr>
-              <td>a2</td>
-              <td><input type="number" id="a1v2"></td>
-              <td><input type="number" id="a2v2"></td>
-              <td><input type="number" id="a3v2"></td>
-          </tr>
-          <tr>
-              <td>a3</td>
-              <td><input type="number" id="a1v3"></td>
-              <td><input type="number" id="a2v3"></td>
-              <td><input type="number" id="a3v3"></td>
-          </tr>
-          </tbody>
-        </table>
-        <br>
-        <div id="graphSection-contents"><!-- Plotly chart--></div>
-        <br>
-        <button onclick="updateGraph()">Update Graph</button>
+                <td>a2</td>
+                <td><input type="number" id="a1v2"></td>
+                <td><input type="number" id="a2v2"></td>
+                <td><input type="number" id="a3v2"></td>
+            </tr>
+            <tr>
+                <td>a3</td>
+                <td><input type="number" id="a1v3"></td>
+                <td><input type="number" id="a2v3"></td>
+                <td><input type="number" id="a3v3"></td>
+            </tr>
+            </tbody>
+          </table>
+          <div id="graph-block">
+            <div id="graphSection-contents"><!-- Plotly Graph--></div>
+            <p>(1.)<br>Understand the<br>concepts of<br>mathematics<br>and computing</p>
+            <p>(2.)<br>Identify the<br>relationship of<br>mathematics and<br>the principles<br>of computing</p>
+            <p>(3.)<br>Apply the<br>knowledge of<br>mathematics in<br>developing<br>computing solutions</p>
+            <p>PERFORMANCE INDICATORS</p>
+          </div>
+        </div>
       </section>
     </main>
   </body>
