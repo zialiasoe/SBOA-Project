@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Your Plotly chart code here
     var xValue = ['a1', 'a2', 'a3'];
     var y1Value = [84, 84, 84];
     var y2Value = [84, 84, 89];
