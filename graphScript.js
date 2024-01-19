@@ -24,7 +24,11 @@ var layout = {
     legend: {
         x: 0.2,
         y: 1.2,
-        orientation: 'h',
+        orientation: 'h'
+    },
+    yaxis: {
+        tickvals: [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100],
+        range: [0, 100]
     }
 };
 
