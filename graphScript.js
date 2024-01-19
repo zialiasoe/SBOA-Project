@@ -65,7 +65,7 @@ function updateGraph() {
         type: 'bar',
         x: ['a1', 'a2', 'a3'],
         y: a1,
-        name: 'Year',
+        name: 'First Cycle',
         text: a1.map(String),
         textposition: 'auto',
         textfont: {
@@ -79,7 +79,7 @@ function updateGraph() {
         type: 'bar',
         x: ['a1', 'a2', 'a3'],
         y: a2,
-        name: 'Year',
+        name: 'Second Cycle',
         text: a2.map(String),
         textposition: 'auto',
         textfont: {
@@ -93,7 +93,7 @@ function updateGraph() {
         type: 'bar',
         x: ['a1', 'a2', 'a3'],
         y: a3,
-        name: 'Year',
+        name: 'Third Cycle',
         width: 0.2,
         text: a3.map(String),
         textposition: 'auto',
