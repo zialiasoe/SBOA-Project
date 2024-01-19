@@ -709,6 +709,48 @@ input::placeholder {
   margin-bottom: 30px;
 }
 
+#graph-top-area {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+}
+
+#graph-top-area p {
+  margin-right: auto;
+}
+
+#graph-top-area button {
+  margin-left: auto;
+  background-color: #a12d38;
+  padding: 4px 14px;
+  margin: 0px 10px;
+  font-size: 12pt;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700; /* POPPINS BOLD */
+  font-style: normal;
+  text-decoration: none;
+  color: #f0f0f0;
+  border: 2px solid #aa8b00;
+  border-radius: 25px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+
+  transition: all 0.3s ease;
+}
+
+#graph-top-area button:hover {
+  background-color: #f0f0f0;
+  border: 2px solid #a12d38;
+  color: #141414;
+  box-shadow: 0.5px 0.5px 3px rgba(0, 0, 0, 0.5);
+}
+
+#graph-top-area button:active {
+  background-color: #f9f9f9;
+  border: 2px solid #aa8b00;
+  color: #f0f0f0;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
 #automatic-graph-whole {
   display: flex;
   flex-direction: column;

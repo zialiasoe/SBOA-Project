@@ -698,13 +698,15 @@
       </section>
 
       <section id="graph" class="mainSections"> <!-- GRAPH -->
-        <p>
-          <strong>Student Outcome (a):</strong> An ability to apply knowledge of
-          computing and mathematics appropriate to the discipline.
-        </p>
+        <div id="graph-top-area">
+          <p>
+            <strong>Student Outcome (a):</strong> An ability to apply knowledge of
+            computing and mathematics appropriate to the discipline.
+          </p>
+          <button onclick="updateGraph()">Update Graph</button>
+        </div>
 
         <!-- Automatic Graph -->
-        <button onclick="updateGraph()">Update Graph</button>
         <div id="automatic-graph-whole">
           <table
             id="gradesTable"
