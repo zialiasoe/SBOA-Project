@@ -982,6 +982,10 @@ input::placeholder {
   box-shadow: none;
   }
 
+  #graph-pi {
+    display: none;
+  }
+
   /* #gradesTable th,
   #plan-main-table th,
   #planTable-pi th,
