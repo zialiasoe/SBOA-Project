@@ -713,6 +713,7 @@ input::placeholder {
   /* border: 2px solid red; */
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 #graph-top-area p {
@@ -721,6 +722,7 @@ input::placeholder {
 
 #graph-top-area button {
   margin-left: auto;
+  height: fit-content;
   background-color: #a12d38;
   padding: 4px 14px;
   margin: 0px 10px;
