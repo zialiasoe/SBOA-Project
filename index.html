@@ -704,36 +704,42 @@
         </p>
 
         <!-- Automatic Graph -->
-        <div>
-          <button onclick="updateGraph()">Update Graph</button>
-          <table id="gradesTable">
+        <button onclick="updateGraph()">Update Graph</button>
+        <div id="automatic-graph-whole">
+          <table
+            id="gradesTable"
+            class="mini-graph"
+            style="width: 500px; height: 150px; margin-bottom: 75px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);">
             <tbody id="gradesTbody1">
+              <p style="margin: 0; padding: 0;">PERFORMANCE INDICATORS</p>
               <tr>
-                <td>a1</td>
+                <td style="width: 50px;">a1</td>
                 <td><input type="number" id="a1v1"></td>
                 <td><input type="number" id="a2v1"></td>
                 <td><input type="number" id="a3v1"></td>
-            </tr>
-            <tr>
-                <td>a2</td>
-                <td><input type="number" id="a1v2"></td>
-                <td><input type="number" id="a2v2"></td>
-                <td><input type="number" id="a3v2"></td>
-            </tr>
-            <tr>
-                <td>a3</td>
-                <td><input type="number" id="a1v3"></td>
-                <td><input type="number" id="a2v3"></td>
-                <td><input type="number" id="a3v3"></td>
-            </tr>
+              </tr>
+              <tr>
+                  <td>a2</td>
+                  <td><input type="number" id="a1v2"></td>
+                  <td><input type="number" id="a2v2"></td>
+                  <td><input type="number" id="a3v2"></td>
+              </tr>
+              <tr>
+                  <td>a3</td>
+                  <td><input type="number" id="a1v3"></td>
+                  <td><input type="number" id="a2v3"></td>
+                  <td><input type="number" id="a3v3"></td>
+              </tr>
             </tbody>
           </table>
           <div id="graph-block">
             <div id="graphSection-contents"><!-- Plotly Graph--></div>
-            <p>(1.)<br>Understand the<br>concepts of<br>mathematics<br>and computing</p>
-            <p>(2.)<br>Identify the<br>relationship of<br>mathematics and<br>the principles<br>of computing</p>
-            <p>(3.)<br>Apply the<br>knowledge of<br>mathematics in<br>developing<br>computing solutions</p>
-            <p>PERFORMANCE INDICATORS</p>
+            <div id="graph-numbers">
+              <p>(1.)<br>Understand the<br>concepts of<br>mathematics<br>and computing</p>
+              <p>(2.)<br>Identify the<br>relationship of<br>mathematics and<br>the principles<br>of computing</p>
+              <p>(3.)<br>Apply the<br>knowledge of<br>mathematics in<br>developing<br>computing solutions</p>
+            </div>
+            <h1>PERFORMANCE INDICATORS</h1>
           </div>
         </div>
       </section>

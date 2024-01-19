@@ -20,7 +20,7 @@ var layout = {
     barmode: 'group',
     bargap: 0.2,
     height: 700,
-    width: 900,
+    width: 1200,
     legend: {
         x: 0.2,
         y: 1.2,
